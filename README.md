@@ -1,8 +1,8 @@
 # KT Chart Sample Code
 
 ## Overview
-
 KT chart monitoring is a powerful tool for monitoring high-frequency multivariate data that has the following features:
+
 - Easy setup
 - Easy interpretation and easy visualization
 - Provide early alerts
@@ -12,13 +12,13 @@ The [following](#ref) SAS technical report contains several applications of KT c
 for the examples in the the technical report.
 
 ## What is KT Chart Monitoring?
-
 The KT chart monitoring method is intended to provide the means to monitor high-frequency multivariate data. The method is based 
 on the SVDD [Tax & Duin, 2004](#svdd) algorithm that is applied to a moving window of observations. This approach enables you to 
 reduce noise that can be present in high-frequency data and eliminates the need to monitor individual observations. KT chart 
 monitoring has two steps:
+
 1.	Training, which is implemented in the [KTTRAIN](#kttrain) procedure. The training process uses the data from normal 
-operations to define the state of statistical control—that is, to determine the central tendency and the spread of the process. 
+operations to define the state of statistical controlâ€”that is, to determine the central tendency and the spread of the process. 
 The KT chart training calculates the control limits for allowed deviations in both the central tendency and the spread. 
 The KT chart for monitoring the process center is called the a chart, and the KT chart for monitoring the process variation is called the R2 chart.
 2.	Monitoring, which is implemented in the [KTMONITOR](#ktmon) procedure. The monitoring process uses the data from the 
@@ -50,9 +50,9 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 ## <a name="ref"> </a> References
 [1] Monitoring Machine Health Using KT Charts: Sergiy Peredriy, Deovrat Kakde, Arin Chaudhuri, and Steven Xu, SAS Institute Inc., URL to be updated
 
-[2] <a name="ktmon"> </a> SAS Institute Inc. (2021). KTMONITOR Procedure. Retrieved from SAS® Viya® Programming Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/v_010/casforecast/casforecast_ktmonitor_toc.htm
+[2] <a name="ktmon"> </a> SAS Institute Inc. (2021). KTMONITOR Procedure. Retrieved from SASÂ® ViyaÂ® Programming Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/v_010/casforecast/casforecast_ktmonitor_toc.htm
 
-[3] <a name="kttrain"> </a> SAS Institute Inc. (2021). KTTRAIN Procedure. Retrieved from SAS® Viya® Programming Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/v_010/casforecast/casforecast_kttrain_toc.htm
+[3] <a name="kttrain"> </a> SAS Institute Inc. (2021). KTTRAIN Procedure. Retrieved from SASÂ® ViyaÂ® Programming Documentation: https://go.documentation.sas.com/doc/en/pgmsascdc/v_010/casforecast/casforecast_kttrain_toc.htm
 
 [4] Kakde, D., Peredriy, S., & Chaudhuri, A. (2017). A Non-parametric Control Chart for High Frequency Multivariate Data. Annual Reliability and Maintainability Symposium (RAMS). Piscataway, NJ: Institute of Electrical and Electronics Engineers.
 
